@@ -21,12 +21,6 @@ if __name__ == "__main__":
     valid_symbols = [x for x in valid_symbols if 'USDT' in x]
     valid_symbols = [x for x in valid_symbols if not '_' in x]
 
-    def go_to_github():
-        webbrowser.open_new(r"https://github.com/sponsors/conor19w?frequency=recurring&sponsor=conor19w")
-
-    def go_to_trello():
-        webbrowser.open_new(r"https://trello.com/b/iagTNiv0/github-bot")
-
     def live_mode():
         global leverage, order_size, API_KEY, API_SECRET, buffer, trading_threshold, use_market_orders
         for child in frame.winfo_children():
